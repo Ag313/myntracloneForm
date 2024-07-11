@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,44 +10,80 @@
     <link rel="stylesheet" href="style.css">
     <title>Login Section</title>
 </head>
+
 <body>
- 
-<!----------------------------- Form box ----------------------------------->    
+
+    <!----------------------------- Form box ----------------------------------->
     <div class="main">
         <nav class="navbar">
             <div class="logo">
-                <p>Myntra Clone</p></div>
-                <div class="nav-menu">
-                    <ul>
-                        <li> <a href="" class="link">Home</a></li>
-                        <li> <a href="" class="link">Services</a></li>
-                        <li> <a href="" class="link">Blog</a></li>
-                        <li> <a href="" class="link">Careers</a></li>
-                        <li> <a href="" class="link">AboutUs</a></li>
-                       
-                    </ul>
-                </div>
-                <div class="nav-btn">
-                    <button class="sign-in-btn" onclick="Login()">SignIn</button>
-                    <button class="sign-up-btn" onclick="Rejister()"> SignUp</button>
-                </div>
-                <div class="nav-menu-btn">
-                    <i class="bx bx-menu" onclick="myMenuFunction()"></i>
-                </div>
-            
+                <p>Myntra Clone</p>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li> <a href="#" class="link">Home</a></li>
+                    <li> <a href="#" class="link">Services</a></li>
+                    <li> <a href="#" class="link">Blog</a></li>
+                    <li> <a href="#" class="link">Careers</a></li>
+                    <li> <a href="#" class="link">AboutUs</a></li>
+
+                </ul>
+            </div>
+            <div class="nav-btn">
+                <button class="sign-in-btn" onclick="Login()">SignIn</button>
+                <button class="sign-up-btn" onclick="Rejister()"> SignUp</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+
         </nav>
     </div>
-        
-        <!------------------- login form -------------------------->
 
-        
+    <!------------------- login form -------------------------->
 
-        <!------------------- registration form -------------------------->
-        
+    <form class="form-box">
+        <div class="login-container" id="login">
+
+            <div class="top">
+                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                <header>Login</header>
+            </div>
+            <div class="input-box">
+                <i class="bx bx-user icon"></i>
+                <input type="text" class="input-field" placeholder="Username or Email">
+            </div>
+
+            <div class="input-box">
+                <span class="icon"><i class="bx bx-lock-alt"></i></span>
+                <input type="password" class="input-field" placeholder="Password">
+             </div>
+
+            <div class="input-box"> 
+                <input type="submit" class="submit" value="Sign In">
+            </div>
+
+            <div class="end-line">
+                <div class="remember" >
+                    <input type="checkbox" id="login-check"/>
+                    <label for="login-check">Remember Me</label>
+                </div>
+                <div class="forgot-pass">
+                    
+                    <label><a href="#">Forgot Password..?</a></label>
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+    <!------------------- registration form -------------------------->
 
 
 
-        <script></script>
+
+    <script></script>
 
 </body>
+
 </html>
