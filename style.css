@@ -8,11 +8,13 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: url("images/1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+background:linear-gradient(100deg, rgba(0, 0, 255, 0.808),wheat);
+    /* background-size: cover; */
+    
     background-attachment: fixed;
-    overflow: hidden;
+     /* overflow: hidden; */
+    height: fit-content;
+    scrollbar-width: none ;
 }
 .wrapper{
     display: flex;
@@ -29,7 +31,7 @@ body{
     width: 100%;
     height: 100px;
     line-height: 100px;
-    background: linear-gradient(rgba(39, 39, 39, 0.863), transparent);
+   background: linear-gradient(rgba(39, 39, 39, 0.863), transparent);
     z-index: 100;
 }
 .nav-logo p{
@@ -186,6 +188,22 @@ header{
 .two label a:hover{
     text-decoration: underline;
 }
+
+footer p{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.432);
+box-shadow: 5px 0px 100px 10px black;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    z-index: 102;
+    height: fit-content;
+    text-align: center;
+    padding: 10px;
+    border: none;
+}
+
+
 @media only screen and (max-width: 786px){
     .nav-button{
         display: none;

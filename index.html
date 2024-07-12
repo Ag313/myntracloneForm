@@ -51,7 +51,7 @@
                    <i class="bx bx-lock-alt"></i>
                </div>
                <div class="input-box">
-                   <input type="submit" class="submit" value="Sign In">
+                   <input type="submit" class="submit" id="submit" value="Sign In">
                </div>
                <div class="two-col">
                    <div class="one">
@@ -63,7 +63,11 @@
                    </div>
                </div>
            </div>
+
+
            <!------------------- registration form -------------------------->
+
+           
            <div class="register-container" id="register">
                <div class="top">
                    <span>Have an account? <a href="#" onclick="login()">Login</a></span>
@@ -101,7 +105,12 @@
                </div>
            </div>
        </div>
-   </div>   
+   </div>  
+   <footer>
+    <p>Myntra Clone 2024.All Rights Reserved for AmanGupta.</p>
+   </footer>
+   
+
    <script>
       
       function myMenuFunction() {
@@ -135,17 +144,11 @@
            x.style.opacity = 0;
            y.style.opacity = 1;
        }
+
+       let blank = document.getElementById("submit");
+       blank.addEventListener("click", function() {
+        event.target.value="";
+       })
    </script>
    </body>
    </html>
-   CSS Codes
-   /* POPPINS FONT */
-     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-   *{  
-       margin: 0;
-       padding: 0;
-       box-sizing: border-box;
-       font-family: 'Poppins', sans-serif;
-   }
-
-</html>
